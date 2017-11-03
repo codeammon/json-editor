@@ -209,7 +209,7 @@ JSONEditor.defaults.editors.select = JSONEditor.AbstractEditor.extend({
         self.onInputChange();
       });
       this.select2.on('change',function() {
-        self.input.value = self.select2.select2('val');
+        self.input.value = self.$element.val();
         self.onInputChange();
       });
     }
